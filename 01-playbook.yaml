@@ -1,5 +1,5 @@
 ---
-- name: PING
+- name PING
   hosts: web
   tasks: # task=module=collection #########
   - name: ping the server
