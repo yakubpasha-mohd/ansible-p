@@ -1,0 +1,14 @@
+---
+- name: Nginx-install-playbook
+  hosts:
+  become : YES
+  tasks:
+  - name: install Nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+  - name: start the nginx
+    ansible.builtin.package:
+      name: nginx
+      state: started
+      enabled: YES
