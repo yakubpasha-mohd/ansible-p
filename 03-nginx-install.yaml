@@ -1,6 +1,6 @@
 ---
 - name: Nginx-install-playbook
-  hosts:
+  hosts: web
   become : YES
   tasks:
   - name: install Nginx
